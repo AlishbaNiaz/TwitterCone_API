@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Tweet</title>
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>✏️ Edit Tweet</h1>
+
+  <div class="edit-form">
+    <form action="/tweets/<%= tweet.id %>?_method=PATCH" method="POST">
+      
+      <p><b>User:</b> @<%= tweet.username %></p>
+      <p><b>ID:</b> <%= tweet.id %></p>
+
+      <label for="tweet_des">Description:</label><br>
+      <textarea id="tweet_des" name="tweet_des" rows="5" cols="20" required><%= tweet.tweet_des %></textarea>
+      
+      <br><br>
+      <button type="submit" class="btn">💾 Update</button>
+      <a href="/tweets/<%= tweet.id %>" class="btn">⬅ Cancel</a>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweets</title>
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>🐦 Twitter Tweets Page</h1>
+
+  <% for(let t of tweet){ %>
+    <div id="tweetbox">
+      <h6><b>ID:</b> <%= t.id %></h6>
+      <h6><b>Username:</b> @<%= t.username %></h6>
+      <h3>Description</h3>
+      <p><%= t.tweet_des %></p>
+
+      <div class="btn-group">
+        <a href="/tweets/<%= t.id %>" class="btn">See Full Tweet</a>
+
+        <a href="/tweets/<%= t.id %>/edit" class="btn">Edit</a>
+
+        <form action="/tweets/<%= t.id %>?_method=DELETE" method="POST" style="display:inline;">
+          <button type="submit" class="btn delete">Delete</button>
+        </form>
+      </div>
+    </div>
+  <% } %>
+
+  <div class="add-btn">
+    <a href="http://localhost:8080/tweets/new" class="btn add">➕ Add New Tweet</a>
+  </div>
+
+</body>
+</html>

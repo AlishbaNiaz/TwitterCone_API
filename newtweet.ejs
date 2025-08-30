@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tweet</title>
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>✍️ Create a New Tweet</h1>
+
+  <div class="form-container">
+    <form action="/tweets" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          placeholder="Enter your username"
+          required>
+      </div>
+
+      <div class="form-group">
+        <label for="tweet_des">Tweet Description:</label>
+        <textarea 
+          id="tweet_des" 
+          name="tweet_des" 
+          placeholder="What's happening?"
+          rows="4"
+          required></textarea>
+      </div>
+
+      <button type="submit" class="btn add">🚀 Post Tweet</button>
+    </form>
+  </div>
+
+</body>
+</html>

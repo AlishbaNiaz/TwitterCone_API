@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Tweet</title>
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>🐦 Full Tweet Details</h1>
+
+  <div class="tweet-detail">
+    <h2>@<%= fulltweet.username %></h2>
+    <p><b>ID:</b> <%= fulltweet.id %></p>
+
+    <h3>Description</h3>
+    <p><%= fulltweet.tweet_des %></p>
+
+    <div class="btn-group">
+      <a href="/tweets" class="btn">⬅ Back to Tweets</a>
+      <a href="/tweets/<%= fulltweet.id %>/edit" class="btn">✏️ Edit</a>
+      <form action="/tweets/<%= fulltweet.id %>?_method=DELETE" method="POST" style="display:inline;">
+        <button type="submit" class="btn delete">🗑 Delete</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
