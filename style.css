@@ -1,0 +1,143 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6ecf0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1da1f2;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+#tweetbox {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tweetbox:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+#tweetbox h6 {
+  margin: 5px 0;
+  color: #657786;
+  font-size: 0.9rem;
+}
+
+#tweetbox h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #14171a;
+}
+
+#tweetbox p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #0f1419;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.btn.delete {
+  background: #e0245e;
+}
+
+.btn.add {
+  background: #17bf63;
+}
+
+.add-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.add-btn .btn {
+  font-size: 1rem;
+  padding: 10px 18px;
+}
+.form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #14171a;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1da1f2;
+  box-shadow: 0 0 5px rgba(29,161,242,0.4);
+}
+.tweet-detail {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tweet-detail h2 {
+  color: #1da1f2;
+  margin-bottom: 10px;
+}
+
+.tweet-detail p {
+  font-size: 1rem;
+  color: #14171a;
+  margin: 8px 0;
+}
